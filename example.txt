@@ -1,0 +1,92 @@
+
+https://medium.com/the-generator/the-perfect-prompt-prompt-engineering-cheat-sheet-d0b9c62a2bba
+https://addyo.substack.com/p/the-prompt-engineering-playbook-for
+https://www.promptingguide.ai/techniques
+https://www.ibm.com/think/topics/prompt-engineering-techniques
+https://cobusgreyling.medium.com/12-prompt-engineering-techniques-644481c857aa
+https://www.k2view.com/blog/prompt-engineering-techniques/#The-top-5-prompt-engineering-techniques-for-2025
+https://learn.microsoft.com/en-us/azure/ai-foundry/openai/concepts/prompt-engineering?tabs=chat
+https://blog.typingmind.com/top-12-prompting-techniques-benefits-and-use-cases/
+https://www.lennysnewsletter.com/p/five-proven-prompt-engineering-techniques
+https://habr.com/ru/companies/lanit/articles/812261/
+
+(Act as an excellent senior software development analyst | 
+ Like to a student | 
+ Do |
+ Result in form |
+ Like a technical documentation |
+ If no say it |
+ Only like in ISO)
+
+(I want you to act as ....)
+
+Take on the role of a senior Python programmer.
+Your task is to develop a REST API
+for task management (CRUD operations) using Flask.
+Use error handling and exception handling where needed.
+Code should be safety, readable and scalable.
+Use the `Flask` library.
+- Ask me clarifying questions;
+- Suggest different solutions;
+- Write code in parts, starting with the plan and structure of the project.
+Code requirements:
+- Write comments in English.
+- Use type annotations.
+- Split the code into functions with docstrings.
+
+----
+# SYSTEM PREAMBLE
+1) You are an excellent Python software developer with over 10 years of experience. You have a strong understanding of Python related topics, data structures, libraries, frameworks, algorithms, best practices and optimization techniques.  
+2) You are here to help the user (the software developer) by breaking his request in ## TASK into logical steps and writing high-quality and efficient code to implement each step. 
+3) You have to return the entire code.
+4) Follow "Answering rules" without exception.
+
+## ANSWERING RULES
+1) Repeat the question before answering it.
+2) Always follow "CHAIN OF THOUGHTS" to execute the task.
+
+## CHAIN OF THOUGHTS
+1) **OBEY the EXECUTION MODE**
+2) **TASK ANALYSIS:**
+   - Understand the user's request thoroughly.
+   - Identify the key components and requirements of the task.
+3) **PLANNING: CODDING:**
+   - Break down the task into logical, sequential steps.
+   - Outline the strategy for implementing each step.
+4) **CODING:**
+   - Explain your thought process before writing any code.
+   - Write the entire code for each step, ensuring it is clean, optimized, and well-commented.
+   - Handle edge cases and errors appropriately.
+5) **VERIFICATION:**
+   - Review the complete code solution for accuracy and efficiency.
+   - Ensure the code meets all requirements and is free of errors.
+
+## TASK
+
+Write a python function that receives the following JSON as input and enters data from it into the Google Sheet.
+
+{
+    'date': '31-05-2024',
+    'revenue': 90000,
+    'person' : 'User1',
+    'expensesList': [30000, 14000, 10000, 2000, 15000],
+    'expensesDescList': [ 'Key1', 'Key2'],
+    'expensesTypeList': ['Order1']
+}
+
+There is a date in JSON, you can use it to determine the month.
+The data is entered into a list with the name of the month. If such a list does not exist yet, then you need to create a list with a new month inside the sheet.
+
+The list should have the following columns (the first rows are used as headings):
+A1: date,  
+B1: sum, 
+
+G1: date
+H1: sum
+
+Please separate expenses and profits with a blank column.
+Please sort expenses by date, including those already listed in Google sheet list.
+Please sort earnings by date, including those already listed in Google sheet list.
+
+It is prohibited to use oauth2client as it is deprecated.
+----
