@@ -10,6 +10,25 @@ https://blog.typingmind.com/top-12-prompting-techniques-benefits-and-use-cases/
 https://www.lennysnewsletter.com/p/five-proven-prompt-engineering-techniques
 https://habr.com/ru/companies/lanit/articles/812261/
 
+Zero-shot Prompting
+Few-shot Prompting
+Chain-of-Thought Prompting
+Meta Prompting
+Self-Consistency
+Generate Knowledge Prompting
+Prompt Chaining
+Tree of Thoughts
+Retrieval Augmented Generation
+Automatic Reasoning and Tool-use
+Automatic Prompt Engineer
+Active-Prompt
+Directional Stimulus Prompting
+Program-Aided Language Models
+ReAct
+Reflexion
+Multimodal CoT
+Graph Prompting
+
 (Act as an excellent senior software development analyst | 
  Like to a student | 
  Do |
